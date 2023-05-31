@@ -16,7 +16,7 @@ variable "virtual_machine_id" {
 
 variable "virtual_machine_attachment_lun" {
   default = null
-  type = number
+  type    = number
 }
 
 variable "virtual_machine_attachment_caching" {
