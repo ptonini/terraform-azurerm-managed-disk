@@ -7,7 +7,10 @@ resource "azurerm_managed_disk" "this" {
   disk_size_gb         = var.disk_size_gb
   lifecycle {
     ignore_changes = [
-      tags
+      tags["business_unit"],
+      tags["environment"],
+      tags["product"],
+      tags["subscription_type"]
     ]
   }
 }
